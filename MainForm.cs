@@ -49,6 +49,7 @@ namespace PCFGenerator
                     if (DrawChar(c))
                         count++;
                 }
+                outputWriter.WriteLine("0xff,0xff // END");
                 outputWriter.WriteLine("};");
                 outputWriter.Close();
                 //outputStream.Flush();
